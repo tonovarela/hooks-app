@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { FormWithCustomHook } from './components/02-useEffect/FormWithCustomHook';
+import { MultipleCustomHooks } from './components/03-examples/MultipleCustomHooks';
+
 
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(  
-<FormWithCustomHook></FormWithCustomHook>
-
+<MultipleCustomHooks></MultipleCustomHooks>
 );
 
 // If you want to start measuring performance in your app, pass a function
