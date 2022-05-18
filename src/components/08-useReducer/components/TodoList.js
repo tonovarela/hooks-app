@@ -8,7 +8,11 @@ export const TodoList = ({todos,handledDelete,handledToogle}) => {
             {
               todos.map((todo, index) =>
               (
-                <TodoListItem key={index} handledDelete={handledDelete} handledToogle={()=>handledToogle(todo.id)} index={index} todo={todo}></TodoListItem>
+                <TodoListItem key={todo.id} 
+                index={index} 
+                handledDelete={handledDelete} 
+                handledToogle={handledToogle} 
+                todo={todo}></TodoListItem>
               )
               )
             }
